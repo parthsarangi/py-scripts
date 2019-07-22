@@ -1,13 +1,13 @@
 import yaml
 
 
-def read_yaml(y, output_files, search_key):
+def read_yaml(job_type, y, output_files, search_key):
     etl_jobs_list = []
     bq_jobs_list = []
     opfile = output_files["all"]
     # opfile_etl = output_files["etl"]
     opfile_bq = output_files["bq"]
-    opfile_bq.write('DB-name, Tab-name, Load-to-bq, etl-Job')
+
     for k1, v1 in y.items():
         if k1 == 'jobs':
             print(">> Found jobs")
@@ -35,13 +35,13 @@ def read_yaml(y, output_files, search_key):
                                         port_pos = v4.index(":3306/") + 6
                                         db_name = v4[port_pos:question_pos]
                                         opfile.write('Db-name: %s\n' % db_name)
-                                        opfile.write('Table-name : %s' % var_dict["tab_name"])
+                                        opfile.write('Table-name : %s\n' % var_dict["tab_name"])
                                         load_to_BQ_job_name = db_name + "_" + var_dict["tab_name"]
-                                        opfile.write('Load-to-bq-Job-name: %s' % load_to_BQ_job_name)
+                                        opfile.write('Load-to-bq-Job-name: %s\n' % load_to_BQ_job_name)
                                         opfile.write('Where-condition : %s\n' % var_dict['where_condition'])
                                         etl_jobs_list.append(k3)
                                         bq_jobs_list.append(load_to_BQ_job_name)
-                                        opfile_bq.write('\n%s, %s, %s, %s' % (db_name, var_dict["tab_name"], load_to_BQ_job_name, k3 ))
+                                        opfile_bq.write('\n%s, %s, %s, %s, %s' % (job_type, db_name, var_dict["tab_name"], load_to_BQ_job_name, k3 ))
     # write_to_file(etl_jobs_list, opfile_etl)
     # write_to_file(bq_jobs_list, opfile_bq)
 
@@ -88,9 +88,11 @@ def main():
     env = "qa"                                    # Change the env parameter to grab specific dsl script
     fileyml = open(bitbucket_path + repo_path + 'DSL/' + env + '/jobs.yaml', 'r')
     y = yaml.load(fileyml, Loader=yaml.FullLoader)
+
+    opfile_bq.write('Job-type, DB-name, Tab-name, Load-to-bq, etl-Job')
     # search_key="ETL-Hourly"
     for search_key in ("ETL-Hourly", "ETL-Daily"):
-        read_yaml(y,output_files,search_key)
+        read_yaml(search_key, y,output_files,search_key)
     fileyml.close()
     opfile.close()
     opfile_etl.close()
