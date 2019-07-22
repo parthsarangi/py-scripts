@@ -3,6 +3,7 @@ Serial: 1
 Job-name: eq.agent.accreditation
 Config-name: acm-eq/agent_accreditation
 Table-name: agent_accreditation
+Where-condition: etl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
 Storage-path: etl.output.storage.path=agent/agent_accreditation/${#df.dateFormat('yyyy')}
 Db-name: agent
 
@@ -10,6 +11,7 @@ Serial: 2
 Job-name: eq.agent.additional
 Config-name: acm-eq/agent_additional
 Table-name: agent_additional
+Where-condition: etl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
 Storage-path: etl.output.storage.path=agent/agent_additional/${#df.dateFormat('yyyy')}
 Db-name: agent
 
@@ -17,6 +19,7 @@ Serial: 3
 Job-name: eq.agent.address
 Config-name: acm-eq/agent_address
 Table-name: agent_address
+Where-condition: etl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
 Storage-path: etl.output.storage.path=agent/agent_address/${#df.dateFormat('yyyy')}
 Db-name: agent
 
@@ -24,6 +27,7 @@ Serial: 4
 Job-name: eq.agent.agent-type
 Config-name: acm-eq/agent_agent-type
 Table-name: agent_type
+Where-condition: etl.input.data.sql.where=WHERE (created_timestamp >= :dataStartedDate AND created_timestamp < :dataEndedDate)
 Storage-path: etl.output.storage.path=agent/agent_type/${#df.dateFormat('yyyy')}
 Db-name: agent
 
@@ -31,6 +35,7 @@ Serial: 5
 Job-name: eq.agent.bank
 Config-name: acm-eq/agent_bank
 Table-name: agent_bank
+Where-condition: etl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
 Storage-path: etl.output.storage.path=agent/agent_bank/${#df.dateFormat('yyyy')}
 Db-name: agent
 
@@ -38,6 +43,7 @@ Serial: 6
 Job-name: eq.agent.contract
 Config-name: acm-eq/agent_contract
 Table-name: agent_contract
+Where-condition: etl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
 Storage-path: etl.output.storage.path=agent/agent_contract/${#df.dateFormat('yyyy')}
 Db-name: agent
 
@@ -45,6 +51,7 @@ Serial: 7
 Job-name: eq.agent.edc
 Config-name: acm-eq/agent_edc
 Table-name: edc
+Where-condition: etl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
 Storage-path: etl.output.storage.path=agent/edc/${#df.dateFormat('yyyy')}
 Db-name: agent
 
@@ -52,6 +59,7 @@ Serial: 8
 Job-name: eq.agent.profile.enhancement
 Config-name: acm-eq/agent_profile_enhancement
 Table-name: agent_profile
+Where-condition: etl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
 Storage-path: etl.output.storage.path=agent/agent_profile/${#df.dateFormat('yyyy')}
 Db-name: agent
 
@@ -59,6 +67,7 @@ Serial: 9
 Job-name: eq.agent.shop
 Config-name: acm-eq/agent_shop
 Table-name: shop
+Where-condition: etl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
 Storage-path: etl.output.storage.path=agent/shop/${#df.dateFormat('yyyy')}
 Db-name: agent
 
@@ -66,6 +75,7 @@ Serial: 10
 Job-name: eq.bulk.upload-file.summary
 Config-name: acm-eq/bulk_upload-file_summary
 Table-name: file_upload
+Where-condition: etl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
 Storage-path: etl.output.storage.path=bulk_upload/file_upload/${#df.dateFormat('yyyy')}
 Db-name: bulk_upload
 
@@ -73,6 +83,7 @@ Serial: 11
 Job-name: eq.customer.additional
 Config-name: acm-eq/customer_additional
 Table-name: customer_additional
+Where-condition: etl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
 Storage-path: etl.output.storage.path=customer/customer_additional/${#df.dateFormat('yyyy')}
 Db-name: customer
 
@@ -80,6 +91,7 @@ Serial: 12
 Job-name: eq.customer.address
 Config-name: acm-eq/customer_address
 Table-name: customer_address
+Where-condition: etl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
 Storage-path: etl.output.storage.path=customer/customer_address/${#df.dateFormat('yyyy')}
 Db-name: customer
 
@@ -87,6 +99,7 @@ Serial: 13
 Job-name: eq.customer.kyc
 Config-name: acm-eq/customer_kyc
 Table-name: customer_kyc
+Where-condition: etl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
 Storage-path: etl.output.storage.path=customer/customer_kyc/${#df.dateFormat('yyyy')}
 Db-name: customer
 
@@ -94,6 +107,7 @@ Serial: 14
 Job-name: eq.customer.profile.enhancement
 Config-name: acm-eq/customer_profile_enhancement
 Table-name: customer_profile
+Where-condition: etl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
 Storage-path: etl.output.storage.path=customer/customer_profile/${#df.dateFormat('yyyy')}
 Db-name: customer
 
@@ -101,6 +115,7 @@ Serial: 15
 Job-name: eq.edc.device
 Config-name: acm-eq/edc_device
 Table-name: edc_device
+Where-condition: etl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
 Storage-path: etl.output.storage.path=device_management/edc_device/${#df.dateFormat('yyyy')}
 Db-name: device_management
 
@@ -108,6 +123,7 @@ Serial: 16
 Job-name: eq.fraud.consultant-ticket
 Config-name: acm-eq/fraud_consultant-ticket
 Table-name: ticket
+Where-condition: etl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
 Storage-path: etl.output.storage.path=fraud_consultant/ticket/${#df.dateFormat('yyyy')}
 Db-name: fraud_consultant
 
@@ -115,6 +131,7 @@ Serial: 17
 Job-name: eq.mobile.device
 Config-name: acm-eq/mobile_device
 Table-name: mobile_device
+Where-condition: etl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
 Storage-path: etl.output.storage.path=device_management/mobile_device/${#df.dateFormat('yyyy')}
 Db-name: device_management
 
@@ -122,6 +139,7 @@ Serial: 18
 Job-name: eq.payment.balance-adjustment-reference
 Config-name: acm-eq/payment_balance-adjustment-reference
 Table-name: balance_adjustment_reference
+Where-condition: etl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
 Storage-path: etl.output.storage.path=workflow/balance_adjustment_reference/${#df.dateFormat('yyyy')}
 Db-name: workflow
 
@@ -129,6 +147,7 @@ Serial: 19
 Job-name: eq.payment.command-tier-mask
 Config-name: acm-eq/payment_command-tier-mask
 Table-name: command_tier_mask
+Where-condition: etl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
 Storage-path: etl.output.storage.path=payment/command_tier_mask/${#df.dateFormat('yyyy')}
 Db-name: payment
 
@@ -136,6 +155,7 @@ Serial: 20
 Job-name: eq.payment.order
 Config-name: acm-eq/payment_order
 Table-name: tr_order
+Where-condition: etl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
 Storage-path: etl.output.storage.path=payment/tr_order/${#df.dateFormat('yyyy')}
 Db-name: payment
 
@@ -143,6 +163,7 @@ Serial: 21
 Job-name: eq.payment.order-detail
 Config-name: acm-eq/payment_order-detail
 Table-name: order_balance_movement
+Where-condition: etl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
 Storage-path: etl.output.storage.path=payment/order_balance_movement/${#df.dateFormat('yyyy')}
 Db-name: payment
 
@@ -150,6 +171,7 @@ Serial: 22
 Job-name: eq.payment.order-reference
 Config-name: acm-eq/payment_order-reference
 Table-name: order_reference
+Where-condition: etl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
 Storage-path: etl.output.storage.path=payment/order_reference/${#df.dateFormat('yyyy')}
 Db-name: payment
 
@@ -157,6 +179,7 @@ Serial: 23
 Job-name: eq.payment.service
 Config-name: acm-eq/payment_service
 Table-name: service
+Where-condition: etl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
 Storage-path: etl.output.storage.path=payment/service/${#df.dateFormat('yyyy')}
 Db-name: payment
 
@@ -164,6 +187,7 @@ Serial: 24
 Job-name: eq.payment.service-group
 Config-name: acm-eq/payment_service-group
 Table-name: service_group
+Where-condition: etl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
 Storage-path: etl.output.storage.path=payment/service_group/${#df.dateFormat('yyyy')}
 Db-name: payment
 
@@ -171,6 +195,7 @@ Serial: 25
 Job-name: eq.payment.tier-level
 Config-name: acm-eq/payment_tier-level
 Table-name: tier_level
+Where-condition: etl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
 Storage-path: etl.output.storage.path=payment/tier_level/${#df.dateFormat('yyyy')}
 Db-name: payment
 
@@ -178,6 +203,7 @@ Serial: 26
 Job-name: eq.payment-fee.tier.mask
 Config-name: acm-eq/payment-fee_tier_mask
 Table-name: fee_tier_mask
+Where-condition: etl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
 Storage-path: etl.output.storage.path=payment/fee_tier_mask/${#df.dateFormat('yyyy')}
 Db-name: payment
 
@@ -185,6 +211,7 @@ Serial: 27
 Job-name: eq.payment-service.tier.mask
 Config-name: acm-eq/payment-service_tier_mask
 Table-name: service_tier_mask
+Where-condition: etl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
 Storage-path: etl.output.storage.path=payment/service_tier_mask/${#df.dateFormat('yyyy')}
 Db-name: payment
 
@@ -192,6 +219,7 @@ Serial: 28
 Job-name: eq.payment-service.tier.mask.condition
 Config-name: acm-eq/payment-service_tier_mask_condition
 Table-name: service_tier_mask_condition
+Where-condition: etl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
 Storage-path: etl.output.storage.path=payment/service_tier_mask_condition/${#df.dateFormat('yyyy')}
 Db-name: payment
 
@@ -199,6 +227,7 @@ Serial: 29
 Job-name: eq.payment-tier.level.mask
 Config-name: acm-eq/payment-tier_level_mask
 Table-name: tier_level_mask
+Where-condition: etl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
 Storage-path: etl.output.storage.path=payment/tier_level_mask/${#df.dateFormat('yyyy')}
 Db-name: payment
 
@@ -206,6 +235,7 @@ Serial: 30
 Job-name: eq.payment.order-balance-movement
 Config-name: acm-eq/payment-order_balance_movement
 Table-name: order_balance_movement
+Where-condition: etl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
 Storage-path: etl.output.storage.path=payment/order_balance_movement/${#df.dateFormat('yyyy')}
 Db-name: payment
 
@@ -213,6 +243,7 @@ Serial: 31
 Job-name: eq.payment.order-locking
 Config-name: acm-eq/payment-order_locking
 Table-name: order_locking
+Where-condition: etl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
 Storage-path: etl.output.storage.path=payment/order_locking/${#df.dateFormat('yyyy')}
 Db-name: payment
 
@@ -220,6 +251,7 @@ Serial: 32
 Job-name: eq.payment.order-voucher-reference
 Config-name: acm-eq/payment-order_voucher_reference
 Table-name: order_voucher_reference
+Where-condition: etl.input.data.sql.where=WHERE (created_timestamp >= :dataStartedDate AND created_timestamp < :dataEndedDate)
 Storage-path: etl.output.storage.path=payment/order_voucher_reference/${#df.dateFormat('yyyy')}
 Db-name: payment
 
@@ -227,6 +259,7 @@ Serial: 33
 Job-name: eq.payment.user-sof
 Config-name: acm-eq/payment-user_sof
 Table-name: user_sof
+Where-condition: etl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
 Storage-path: etl.output.storage.path=payment/user_sof/${#df.dateFormat('yyyy')}
 Db-name: payment
 
@@ -234,6 +267,7 @@ Serial: 34
 Job-name: eq.reconciler.reconciliation-record
 Config-name: acm-eq/reconciler-reconciliation_record
 Table-name: reconciliation_record
+Where-condition: etl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
 Storage-path: etl.output.storage.path=reconciler/reconciliation_record/${#df.dateFormat('yyyy')}
 Db-name: reconciler
 
@@ -241,6 +275,7 @@ Serial: 35
 Job-name: eq.reconciler.settlement
 Config-name: acm-eq/reconciler-settlement
 Table-name: settlement
+Where-condition: etl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
 Storage-path: etl.output.storage.path=reconciler/settlement/${#df.dateFormat('yyyy')}
 Db-name: reconciler
 
@@ -248,6 +283,7 @@ Serial: 36
 Job-name: eq.reconciler.settlement-reconciliation-record
 Config-name: acm-eq/reconciler-settlement_reconciliation_record
 Table-name: settlement_reconciliation_record
+Where-condition: etl.input.data.sql.where=
 Storage-path: etl.output.storage.path=reconciler/settlement_reconciliation_record/${#df.dateFormat('yyyy')}
 Db-name: reconciler
 
@@ -255,6 +291,7 @@ Serial: 37
 Job-name: eq.reconciler.settlement-resolving-history
 Config-name: acm-eq/reconciler-settlement_resolving_history
 Table-name: settlement_resolving_history
+Where-condition: etl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
 Storage-path: etl.output.storage.path=reconciler/settlement_resolving_history/${#df.dateFormat('yyyy')}
 Db-name: reconciler
 
@@ -262,6 +299,7 @@ Serial: 38
 Job-name: eq.reconciler.settlement-unsettled-transaction
 Config-name: acm-eq/reconciler-settlement_unsettled_transaction
 Table-name: settlement_unsettled_transaction
+Where-condition: etl.input.data.sql.where=
 Storage-path: etl.output.storage.path=reconciler/settlement_unsettled_transaction/${#df.dateFormat('yyyy')}
 Db-name: reconciler
 
@@ -269,6 +307,7 @@ Serial: 39
 Job-name: eq.pos.device
 Config-name: acm-eq/pos_device
 Table-name: pos_device
+Where-condition: etl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
 Storage-path: etl.output.storage.path=device_management/pos_device/${#df.dateFormat('yyyy')}
 Db-name: device_management
 
@@ -276,6 +315,7 @@ Serial: 40
 Job-name: eq.prepaid-card.card
 Config-name: acm-eq/prepaid-card_card
 Table-name: card
+Where-condition: etl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
 Storage-path: etl.output.storage.path=prepaid_card/card/${#df.dateFormat('yyyy')}
 Db-name: prepaid_card
 
@@ -283,6 +323,7 @@ Serial: 41
 Job-name: eq.agent.relationship.list
 Config-name: acm-eq/relationship_list
 Table-name: relationship
+Where-condition: etl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
 Storage-path: etl.output.storage.path=agent/relationship/${#df.dateFormat('yyyy')}
 Db-name: agent
 
@@ -290,6 +331,7 @@ Serial: 42
 Job-name: eq.agent.relationship.type
 Config-name: acm-eq/relationship_type
 Table-name: relationship_type
+Where-condition: etl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
 Storage-path: etl.output.storage.path=agent/relationship_type/${#df.dateFormat('yyyy')}
 Db-name: agent
 
@@ -297,6 +339,7 @@ Serial: 43
 Job-name: eq.rule
 Config-name: acm-eq/rule
 Table-name: rule
+Where-condition: etl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
 Storage-path: etl.output.storage.path=rule_engine/rule/${#df.dateFormat('yyyy')}
 Db-name: rule_engine
 
@@ -304,6 +347,7 @@ Serial: 44
 Job-name: eq.rule.action
 Config-name: acm-eq/rule_action
 Table-name: action
+Where-condition: etl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
 Storage-path: etl.output.storage.path=rule_engine/action/${#df.dateFormat('yyyy')}
 Db-name: rule_engine
 
@@ -311,6 +355,7 @@ Serial: 45
 Job-name: eq.rule.action-data-history
 Config-name: acm-eq/rule_action-data-history
 Table-name: action_data_history
+Where-condition: etl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
 Storage-path: etl.output.storage.path=rule_engine/action_data_history/${#df.dateFormat('yyyy')}
 Db-name: rule_engine
 
@@ -318,6 +363,7 @@ Serial: 46
 Job-name: eq.rule.action-history
 Config-name: acm-eq/rule_action-history
 Table-name: action_history
+Where-condition: etl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
 Storage-path: etl.output.storage.path=rule_engine/action_history/${#df.dateFormat('yyyy')}
 Db-name: rule_engine
 
@@ -325,6 +371,7 @@ Serial: 47
 Job-name: eq.rule.event
 Config-name: acm-eq/rule_event
 Table-name: event
+Where-condition: etl.input.data.sql.where=WHERE (event_created_timestamp >= :dataStartedDate AND event_created_timestamp < :dataEndedDate)
 Storage-path: etl.output.storage.path=rule_engine/event/${#df.dateFormat('yyyy')}
 Db-name: rule_engine
 
@@ -332,6 +379,7 @@ Serial: 48
 Job-name: eq.rule.mechanic
 Config-name: acm-eq/rule_mechanic
 Table-name: mechanic
+Where-condition: etl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
 Storage-path: etl.output.storage.path=rule_engine/mechanic/${#df.dateFormat('yyyy')}
 Db-name: rule_engine
 
@@ -339,6 +387,7 @@ Serial: 49
 Job-name: eq.sof.bank
 Config-name: acm-eq/sof_bank
 Table-name: bank
+Where-condition: etl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
 Storage-path: etl.output.storage.path=sof_bank/bank/${#df.dateFormat('yyyy')}
 Db-name: sof_bank
 
@@ -346,6 +395,7 @@ Serial: 50
 Job-name: eq.sof.bank-sof
 Config-name: acm-eq/sof_bank-sof
 Table-name: source_of_fund
+Where-condition: etl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
 Storage-path: etl.output.storage.path=sof_bank/source_of_fund/${#df.dateFormat('yyyy')}
 Db-name: sof_bank
 
@@ -353,6 +403,7 @@ Serial: 51
 Job-name: eq.sof.bank-transaction
 Config-name: acm-eq/sof_bank-transaction
 Table-name: transaction
+Where-condition: etl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
 Storage-path: etl.output.storage.path=sof_bank/transaction/${#df.dateFormat('yyyy')}
 Db-name: sof_bank
 
@@ -360,6 +411,7 @@ Serial: 52
 Job-name: eq.sof.card-design
 Config-name: acm-eq/sof_card-design
 Table-name: card_design
+Where-condition: etl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
 Storage-path: etl.output.storage.path=sof_card/card_design/${#df.dateFormat('yyyy')}
 Db-name: sof_card
 
@@ -367,6 +419,7 @@ Serial: 53
 Job-name: eq.sof.card-provider
 Config-name: acm-eq/sof_card-provider
 Table-name: provider
+Where-condition: etl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
 Storage-path: etl.output.storage.path=sof_card/provider/${#df.dateFormat('yyyy')}
 Db-name: sof_card
 
@@ -374,6 +427,7 @@ Serial: 54
 Job-name: eq.sof.card-sof
 Config-name: acm-eq/sof_card-sof
 Table-name: source_of_fund
+Where-condition: etl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
 Storage-path: etl.output.storage.path=sof_card/source_of_fund/${#df.dateFormat('yyyy')}
 Db-name: sof_card
 
@@ -381,6 +435,7 @@ Serial: 55
 Job-name: eq.sof.card-transaction
 Config-name: acm-eq/sof_card-transaction
 Table-name: transaction
+Where-condition: etl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
 Storage-path: etl.output.storage.path=sof_card/transaction/${#df.dateFormat('yyyy')}
 Db-name: sof_card
 
@@ -388,6 +443,7 @@ Serial: 56
 Job-name: eq.sof.cash-balance
 Config-name: acm-eq/sof_cash-balance
 Table-name: source_of_fund
+Where-condition: etl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
 Storage-path: etl.output.storage.path=sof_cash/source_of_fund/${#df.dateFormat('yyyy')}
 Db-name: sof_cash
 
@@ -395,6 +451,7 @@ Serial: 57
 Job-name: eq.sof.cash-threshold.limit
 Config-name: acm-eq/sof_cash-threshold_limit
 Table-name: threshold_limit
+Where-condition: etl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
 Storage-path: etl.output.storage.path=sof_cash/threshold_limit/${#df.dateFormat('yyyy')}
 Db-name: sof_cash
 
@@ -402,6 +459,7 @@ Serial: 58
 Job-name: eq.voucher.list
 Config-name: acm-eq/voucher_list
 Table-name: voucher
+Where-condition: etl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
 Storage-path: etl.output.storage.path=voucher/voucher/${#df.dateFormat('yyyy')}
 Db-name: voucher
 
@@ -409,6 +467,7 @@ Serial: 59
 Job-name: eq.voucher-discount.detail.list
 Config-name: acm-eq/voucher-discount_detail_list
 Table-name: discount_detail
+Where-condition: etl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
 Storage-path: etl.output.storage.path=voucher/discount_detail/${#df.dateFormat('yyyy')}
 Db-name: voucher
 
@@ -416,6 +475,7 @@ Serial: 60
 Job-name: eq.voucher-discount.list
 Config-name: acm-eq/voucher-discount_list
 Table-name: discount
+Where-condition: etl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
 Storage-path: etl.output.storage.path=voucher/discount/${#df.dateFormat('yyyy')}
 Db-name: voucher
 
@@ -423,6 +483,7 @@ Serial: 61
 Job-name: eq.voucher-voucher.transaction
 Config-name: acm-eq/voucher-voucher_transaction
 Table-name: discount_transaction
+Where-condition: etl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
 Storage-path: etl.output.storage.path=voucher/discount_transaction/${#df.dateFormat('yyyy')}
 Db-name: voucher
 
@@ -430,6 +491,7 @@ Serial: 62
 Job-name: eq.web.portal.device
 Config-name: acm-eq/web_portal_device
 Table-name: web_portal_device
+Where-condition: etl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
 Storage-path: etl.output.storage.path=device_management/web_portal_device/${#df.dateFormat('yyyy')}
 Db-name: device_management
 
@@ -437,203 +499,240 @@ Serial: 63
 Job-name: eq.agent.activity-tracking
 Config-name: acm-eq/agent_activity_tracking
 Table-name: agent_activity_tracking
+Where-condition: etl.input.data.sql.where=WHERE (created_timestamp >= :dataStartedDate AND created_timestamp < :dataEndedDate)
 Storage-path: etl.output.storage.path=agent/agent_activity_tracking/${#df.dateFormat('yyyy')}
 Db-name: agent
 
 >> Job type ETL-Daily
 Serial: 1
+Job-name: eq.bulk-upload.file-management
+Config-name: acm-eq/bulk_upload-file_management
+Table-name: file_management
+Where-condition: etl.input.data.sql.where=
+Storage-path: etl.output.storage.path=bulk_upload/file_management/${#df.dateFormat('yyyy')}
+Db-name: bulk_upload
+
+Serial: 2
 Job-name: eq.agent-company.service
 Config-name: acm-eq/agent-company_service
 Table-name: company_service
+Where-condition: etl.input.data.sql.where=
 Storage-path: etl.output.storage.path=agent/company_service/${#df.dateFormat('yyyy')}
 Db-name: agent
 
-Serial: 2
+Serial: 3
 Job-name: eq.bulk.upload-function
 Config-name: acm-eq/bulk_upload-function
 Table-name: function
+Where-condition: etl.input.data.sql.where=
 Storage-path: etl.output.storage.path=bulk_upload/function/${#df.dateFormat('yyyy')}
 Db-name: bulk_upload
 
-Serial: 3
+Serial: 4
 Job-name: eq.bulk.upload-status
 Config-name: acm-eq/bulk_upload-status
 Table-name: m_file_status
+Where-condition: etl.input.data.sql.where=
 Storage-path: etl.output.storage.path=bulk_upload/m_file_status/${#df.dateFormat('yyyy')}
 Db-name: bulk_upload
 
-Serial: 4
+Serial: 5
 Job-name: eq.payment.service-company-type
 Config-name: acm-eq/payment_service-company-type
 Table-name: service_company_type
+Where-condition: etl.input.data.sql.where=
 Storage-path: etl.output.storage.path=payment/service_company_type/${#df.dateFormat('yyyy')}
 Db-name: payment
 
-Serial: 5
+Serial: 6
 Job-name: eq.payment.sof-type
 Config-name: acm-eq/payment_sof-type
 Table-name: m_sof_type
+Where-condition: etl.input.data.sql.where=
 Storage-path: etl.output.storage.path=payment/m_sof_type/${#df.dateFormat('yyyy')}
 Db-name: payment
 
-Serial: 6
+Serial: 7
 Job-name: eq.payment.balance-distribution
 Config-name: acm-eq/payment-balance_distribution
 Table-name: balance_distribution
+Where-condition: etl.input.data.sql.where=
 Storage-path: etl.output.storage.path=payment/balance_distribution/${#df.dateFormat('yyyy')}
 Db-name: payment
 
-Serial: 7
+Serial: 8
 Job-name: eq.payment.fee-tier
 Config-name: acm-eq/payment-fee_tier
 Table-name: fee_tier
+Where-condition: etl.input.data.sql.where=
 Storage-path: etl.output.storage.path=payment/fee_tier/${#df.dateFormat('yyyy')}
 Db-name: payment
 
-Serial: 8
+Serial: 9
 Job-name: eq.payment.service-agent-type
 Config-name: acm-eq/payment-service_agent_type
 Table-name: service_agent_type
+Where-condition: etl.input.data.sql.where=
 Storage-path: etl.output.storage.path=payment/service_agent_type/${#df.dateFormat('yyyy')}
 Db-name: payment
 
-Serial: 9
+Serial: 10
 Job-name: eq.payment.service-command
 Config-name: acm-eq/payment-service_command
 Table-name: service_command
+Where-condition: etl.input.data.sql.where=
 Storage-path: etl.output.storage.path=payment/service_command/${#df.dateFormat('yyyy')}
 Db-name: payment
 
-Serial: 10
+Serial: 11
 Job-name: eq.payment.service-customer-classification
 Config-name: acm-eq/payment-service_customer_classification
 Table-name: service_customer_classification
+Where-condition: etl.input.data.sql.where=
 Storage-path: etl.output.storage.path=payment/service_customer_classification/${#df.dateFormat('yyyy')}
 Db-name: payment
 
-Serial: 11
+Serial: 12
 Job-name: eq.payment.spi-url
 Config-name: acm-eq/payment-spi_url
 Table-name: spi_url
+Where-condition: etl.input.data.sql.where=
 Storage-path: etl.output.storage.path=payment/spi_url/${#df.dateFormat('yyyy')}
 Db-name: payment
 
-Serial: 12
+Serial: 13
 Job-name: eq.payment.spi-url-configuration
 Config-name: acm-eq/payment-spi_url_configuration
 Table-name: spi_url_configuration
+Where-condition: etl.input.data.sql.where=
 Storage-path: etl.output.storage.path=payment/spi_url_configuration/${#df.dateFormat('yyyy')}
 Db-name: payment
 
-Serial: 13
+Serial: 14
 Job-name: eq.payment.user-payment-pin
 Config-name: acm-eq/payment-user_payment_pin
 Table-name: user_payment_pin
+Where-condition: etl.input.data.sql.where=
 Storage-path: etl.output.storage.path=payment/user_payment_pin/${#df.dateFormat('yyyy')}
 Db-name: payment
 
-Serial: 14
+Serial: 15
 Job-name: eq.reconciler.internal-reconciliation-job-config
 Config-name: acm-eq/reconciler-internal_reconciliation_job_config
 Table-name: internal_reconciliation_job_config
+Where-condition: etl.input.data.sql.where=
 Storage-path: etl.output.storage.path=reconciler/internal_reconciliation_job_config/${#df.dateFormat('yyyy')}
 Db-name: reconciler
 
-Serial: 15
+Serial: 16
 Job-name: eq.reconciler.internal-reconciliation-service-config
 Config-name: acm-eq/reconciler-internal_reconciliation_service_config
 Table-name: internal_reconciliation_service_config
+Where-condition: etl.input.data.sql.where=
 Storage-path: etl.output.storage.path=reconciler/internal_reconciliation_service_config/${#df.dateFormat('yyyy')}
 Db-name: reconciler
 
-Serial: 16
+Serial: 17
 Job-name: eq.reconciler.internal-reconciliation-tier-label-config
 Config-name: acm-eq/reconciler-internal_reconciliation_tier_label_config
 Table-name: internal_reconciliation_tier_label_config
+Where-condition: etl.input.data.sql.where=
 Storage-path: etl.output.storage.path=reconciler/internal_reconciliation_tier_label_config/${#df.dateFormat('yyyy')}
 Db-name: reconciler
 
-Serial: 17
+Serial: 18
 Job-name: eq.reconciler.settlement-configuration
 Config-name: acm-eq/reconciler-settlement_configuration
 Table-name: settlement_configuration
+Where-condition: etl.input.data.sql.where=
 Storage-path: etl.output.storage.path=reconciler/settlement_configuration/${#df.dateFormat('yyyy')}
 Db-name: reconciler
 
-Serial: 18
+Serial: 19
 Job-name: eq.reconciler.partner-file
 Config-name: acm-eq/reconciler-partner_file
 Table-name: partner_file
+Where-condition: etl.input.data.sql.where=
 Storage-path: etl.output.storage.path=reconciler/partner_file/${#df.dateFormat('yyyy')}
 Db-name: reconciler
 
-Serial: 19
+Serial: 20
 Job-name: eq.reconciler.partner-reconcile-result
 Config-name: acm-eq/reconciler-partner_reconcile_result
 Table-name: partner_reconcile_result
+Where-condition: etl.input.data.sql.where=
 Storage-path: etl.output.storage.path=reconciler/partner_reconcile_result/${#df.dateFormat('yyyy')}
 Db-name: reconciler
 
-Serial: 20
+Serial: 21
 Job-name: eq.reconciler.sof-file
 Config-name: acm-eq/reconciler-sof_file
 Table-name: sof_file
+Where-condition: etl.input.data.sql.where=
 Storage-path: etl.output.storage.path=reconciler/sof_file/${#df.dateFormat('yyyy')}
 Db-name: reconciler
 
-Serial: 21
+Serial: 22
 Job-name: eq.reconciler.sof-reconcile-result
 Config-name: acm-eq/reconciler-sof_reconcile_result
 Table-name: sof_reconcile_result
+Where-condition: etl.input.data.sql.where=
 Storage-path: etl.output.storage.path=reconciler/sof_reconcile_result/${#df.dateFormat('yyyy')}
 Db-name: reconciler
 
-Serial: 22
+Serial: 23
 Job-name: eq.prepaid-card.card-type
 Config-name: acm-eq/prepaid-card_card-type
 Table-name: card_type
+Where-condition: etl.input.data.sql.where=
 Storage-path: etl.output.storage.path=prepaid_card/card_type/${#df.dateFormat('yyyy')}
 Db-name: prepaid_card
 
-Serial: 23
+Serial: 24
 Job-name: eq.rule.event-value
 Config-name: acm-eq/rule_event-value
 Table-name: event_value
+Where-condition: etl.input.data.sql.where=
 Storage-path: etl.output.storage.path=rule_engine/event_value/${#df.dateFormat('yyyy')}
 Db-name: rule_engine
 
-Serial: 24
+Serial: 25
 Job-name: eq.sof.bank-action
 Config-name: acm-eq/sof_bank-action
 Table-name: action
+Where-condition: etl.input.data.sql.where=
 Storage-path: etl.output.storage.path=sof_bank/action/${#df.dateFormat('yyyy')}
 Db-name: sof_bank
 
-Serial: 25
+Serial: 26
 Job-name: eq.sof.card-action
 Config-name: acm-eq/sof_card-action
 Table-name: action
+Where-condition: etl.input.data.sql.where=
 Storage-path: etl.output.storage.path=sof_card/action/${#df.dateFormat('yyyy')}
 Db-name: sof_card
 
-Serial: 26
+Serial: 27
 Job-name: eq.agent.hierarchy
 Config-name: acm-eq/agent_hierarchy
 Table-name: sale_hierarchy
+Where-condition: etl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
 Storage-path: etl.output.storage.path=agent/sale_hierarchy/${#df.dateFormat('yyyy')}
 Db-name: agent
 
-Serial: 27
+Serial: 28
 Job-name: eq.agent.hierarchy-connection
 Config-name: acm-eq/agent_hierarchy_connection
 Table-name: sale_hierarchy_connection
+Where-condition: etl.input.data.sql.where=WHERE (created_timestamp >= :dataStartedDate AND created_timestamp < :dataEndedDate)
 Storage-path: etl.output.storage.path=agent/sale_hierarchy_connection/${#df.dateFormat('yyyy')}
 Db-name: agent
 
-Serial: 28
+Serial: 29
 Job-name: eq.agent.hierarchy-node
 Config-name: acm-eq/agent_hierarchy_node
 Table-name: hierarchy_node
+Where-condition: etl.input.data.sql.where=WHERE (created_timestamp >= :dataStartedDate AND created_timestamp < :dataEndedDate)
 Storage-path: etl.output.storage.path=agent/hierarchy_node/${#df.dateFormat('yyyy')}
 Db-name: agent
 
