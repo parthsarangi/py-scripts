@@ -1,4 +1,5 @@
 >> Job type ETL-Hourly
+
 Serial: 1
 Job-name: eq.agent.accreditation
 Config-name: acm-eq/agent_accreditation
@@ -6,6 +7,7 @@ Db-name: agent
 Table-name : agent_accreditation
 Load-to-bq-Job-name: agent_agent_accreditation
 Where-condition : tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+
 Serial: 2
 Job-name: eq.agent.additional
 Config-name: acm-eq/agent_additional
@@ -13,6 +15,7 @@ Db-name: agent
 Table-name : agent_additional
 Load-to-bq-Job-name: agent_agent_additional
 Where-condition : tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+
 Serial: 3
 Job-name: eq.agent.address
 Config-name: acm-eq/agent_address
@@ -20,6 +23,7 @@ Db-name: agent
 Table-name : agent_address
 Load-to-bq-Job-name: agent_agent_address
 Where-condition : tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+
 Serial: 4
 Job-name: eq.agent.agent-type
 Config-name: acm-eq/agent_agent-type
@@ -27,6 +31,7 @@ Db-name: agent
 Table-name : agent_type
 Load-to-bq-Job-name: agent_agent_type
 Where-condition : tl.input.data.sql.where=WHERE (created_timestamp >= :dataStartedDate AND created_timestamp < :dataEndedDate)
+
 Serial: 5
 Job-name: eq.agent.bank
 Config-name: acm-eq/agent_bank
@@ -34,6 +39,7 @@ Db-name: agent
 Table-name : agent_bank
 Load-to-bq-Job-name: agent_agent_bank
 Where-condition : tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+
 Serial: 6
 Job-name: eq.agent.contract
 Config-name: acm-eq/agent_contract
@@ -41,6 +47,7 @@ Db-name: agent
 Table-name : agent_contract
 Load-to-bq-Job-name: agent_agent_contract
 Where-condition : tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+
 Serial: 7
 Job-name: eq.agent.edc
 Config-name: acm-eq/agent_edc
@@ -48,6 +55,7 @@ Db-name: agent
 Table-name : edc
 Load-to-bq-Job-name: agent_edc
 Where-condition : tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+
 Serial: 8
 Job-name: eq.agent.profile.enhancement
 Config-name: acm-eq/agent_profile_enhancement
@@ -55,6 +63,7 @@ Db-name: agent
 Table-name : agent_profile
 Load-to-bq-Job-name: agent_agent_profile
 Where-condition : tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+
 Serial: 9
 Job-name: eq.agent.shop
 Config-name: acm-eq/agent_shop
@@ -62,6 +71,7 @@ Db-name: agent
 Table-name : shop
 Load-to-bq-Job-name: agent_shop
 Where-condition : tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+
 Serial: 10
 Job-name: eq.bulk.upload-file.summary
 Config-name: acm-eq/bulk_upload-file_summary
@@ -69,6 +79,7 @@ Db-name: bulk_upload
 Table-name : file_upload
 Load-to-bq-Job-name: bulk_upload_file_upload
 Where-condition : tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+
 Serial: 11
 Job-name: eq.customer.additional
 Config-name: acm-eq/customer_additional
@@ -76,6 +87,7 @@ Db-name: customer
 Table-name : customer_additional
 Load-to-bq-Job-name: customer_customer_additional
 Where-condition : tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+
 Serial: 12
 Job-name: eq.customer.address
 Config-name: acm-eq/customer_address
@@ -83,6 +95,7 @@ Db-name: customer
 Table-name : customer_address
 Load-to-bq-Job-name: customer_customer_address
 Where-condition : tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+
 Serial: 13
 Job-name: eq.customer.kyc
 Config-name: acm-eq/customer_kyc
@@ -90,6 +103,7 @@ Db-name: customer
 Table-name : customer_kyc
 Load-to-bq-Job-name: customer_customer_kyc
 Where-condition : tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+
 Serial: 14
 Job-name: eq.customer.profile.enhancement
 Config-name: acm-eq/customer_profile_enhancement
@@ -97,6 +111,7 @@ Db-name: customer
 Table-name : customer_profile
 Load-to-bq-Job-name: customer_customer_profile
 Where-condition : tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+
 Serial: 15
 Job-name: eq.edc.device
 Config-name: acm-eq/edc_device
@@ -104,6 +119,7 @@ Db-name: device_management
 Table-name : edc_device
 Load-to-bq-Job-name: device_management_edc_device
 Where-condition : tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+
 Serial: 16
 Job-name: eq.fraud.consultant-ticket
 Config-name: acm-eq/fraud_consultant-ticket
@@ -111,6 +127,7 @@ Db-name: fraud_consultant
 Table-name : ticket
 Load-to-bq-Job-name: fraud_consultant_ticket
 Where-condition : tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+
 Serial: 17
 Job-name: eq.mobile.device
 Config-name: acm-eq/mobile_device
@@ -118,6 +135,7 @@ Db-name: device_management
 Table-name : mobile_device
 Load-to-bq-Job-name: device_management_mobile_device
 Where-condition : tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+
 Serial: 18
 Job-name: eq.payment.balance-adjustment-reference
 Config-name: acm-eq/payment_balance-adjustment-reference
@@ -125,6 +143,7 @@ Db-name: workflow
 Table-name : balance_adjustment_reference
 Load-to-bq-Job-name: workflow_balance_adjustment_reference
 Where-condition : tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+
 Serial: 19
 Job-name: eq.payment.command-tier-mask
 Config-name: acm-eq/payment_command-tier-mask
@@ -132,6 +151,7 @@ Db-name: payment
 Table-name : command_tier_mask
 Load-to-bq-Job-name: payment_command_tier_mask
 Where-condition : tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+
 Serial: 20
 Job-name: eq.payment.order
 Config-name: acm-eq/payment_order
@@ -139,6 +159,7 @@ Db-name: payment
 Table-name : tr_order
 Load-to-bq-Job-name: payment_tr_order
 Where-condition : tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+
 Serial: 21
 Job-name: eq.payment.order-detail
 Config-name: acm-eq/payment_order-detail
@@ -146,6 +167,7 @@ Db-name: payment
 Table-name : order_balance_movement
 Load-to-bq-Job-name: payment_order_balance_movement
 Where-condition : tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+
 Serial: 22
 Job-name: eq.payment.order-reference
 Config-name: acm-eq/payment_order-reference
@@ -153,6 +175,7 @@ Db-name: payment
 Table-name : order_reference
 Load-to-bq-Job-name: payment_order_reference
 Where-condition : tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+
 Serial: 23
 Job-name: eq.payment.service
 Config-name: acm-eq/payment_service
@@ -160,6 +183,7 @@ Db-name: payment
 Table-name : service
 Load-to-bq-Job-name: payment_service
 Where-condition : tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+
 Serial: 24
 Job-name: eq.payment.service-group
 Config-name: acm-eq/payment_service-group
@@ -167,6 +191,7 @@ Db-name: payment
 Table-name : service_group
 Load-to-bq-Job-name: payment_service_group
 Where-condition : tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+
 Serial: 25
 Job-name: eq.payment.tier-level
 Config-name: acm-eq/payment_tier-level
@@ -174,6 +199,7 @@ Db-name: payment
 Table-name : tier_level
 Load-to-bq-Job-name: payment_tier_level
 Where-condition : tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+
 Serial: 26
 Job-name: eq.payment-fee.tier.mask
 Config-name: acm-eq/payment-fee_tier_mask
@@ -181,6 +207,7 @@ Db-name: payment
 Table-name : fee_tier_mask
 Load-to-bq-Job-name: payment_fee_tier_mask
 Where-condition : tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+
 Serial: 27
 Job-name: eq.payment-service.tier.mask
 Config-name: acm-eq/payment-service_tier_mask
@@ -188,6 +215,7 @@ Db-name: payment
 Table-name : service_tier_mask
 Load-to-bq-Job-name: payment_service_tier_mask
 Where-condition : tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+
 Serial: 28
 Job-name: eq.payment-service.tier.mask.condition
 Config-name: acm-eq/payment-service_tier_mask_condition
@@ -195,6 +223,7 @@ Db-name: payment
 Table-name : service_tier_mask_condition
 Load-to-bq-Job-name: payment_service_tier_mask_condition
 Where-condition : tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+
 Serial: 29
 Job-name: eq.payment-tier.level.mask
 Config-name: acm-eq/payment-tier_level_mask
@@ -202,6 +231,7 @@ Db-name: payment
 Table-name : tier_level_mask
 Load-to-bq-Job-name: payment_tier_level_mask
 Where-condition : tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+
 Serial: 30
 Job-name: eq.payment.order-balance-movement
 Config-name: acm-eq/payment-order_balance_movement
@@ -209,6 +239,7 @@ Db-name: payment
 Table-name : order_balance_movement
 Load-to-bq-Job-name: payment_order_balance_movement
 Where-condition : tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+
 Serial: 31
 Job-name: eq.payment.order-locking
 Config-name: acm-eq/payment-order_locking
@@ -216,6 +247,7 @@ Db-name: payment
 Table-name : order_locking
 Load-to-bq-Job-name: payment_order_locking
 Where-condition : tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+
 Serial: 32
 Job-name: eq.payment.order-voucher-reference
 Config-name: acm-eq/payment-order_voucher_reference
@@ -223,6 +255,7 @@ Db-name: payment
 Table-name : order_voucher_reference
 Load-to-bq-Job-name: payment_order_voucher_reference
 Where-condition : tl.input.data.sql.where=WHERE (created_timestamp >= :dataStartedDate AND created_timestamp < :dataEndedDate)
+
 Serial: 33
 Job-name: eq.payment.user-sof
 Config-name: acm-eq/payment-user_sof
@@ -230,6 +263,7 @@ Db-name: payment
 Table-name : user_sof
 Load-to-bq-Job-name: payment_user_sof
 Where-condition : tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+
 Serial: 34
 Job-name: eq.reconciler.reconciliation-record
 Config-name: acm-eq/reconciler-reconciliation_record
@@ -237,6 +271,7 @@ Db-name: reconciler
 Table-name : reconciliation_record
 Load-to-bq-Job-name: reconciler_reconciliation_record
 Where-condition : tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+
 Serial: 35
 Job-name: eq.reconciler.settlement
 Config-name: acm-eq/reconciler-settlement
@@ -244,6 +279,7 @@ Db-name: reconciler
 Table-name : settlement
 Load-to-bq-Job-name: reconciler_settlement
 Where-condition : tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+
 Serial: 36
 Job-name: eq.reconciler.settlement-reconciliation-record
 Config-name: acm-eq/reconciler-settlement_reconciliation_record
@@ -251,6 +287,7 @@ Db-name: reconciler
 Table-name : settlement_reconciliation_record
 Load-to-bq-Job-name: reconciler_settlement_reconciliation_record
 Where-condition : tl.input.data.sql.where=
+
 Serial: 37
 Job-name: eq.reconciler.settlement-resolving-history
 Config-name: acm-eq/reconciler-settlement_resolving_history
@@ -258,6 +295,7 @@ Db-name: reconciler
 Table-name : settlement_resolving_history
 Load-to-bq-Job-name: reconciler_settlement_resolving_history
 Where-condition : tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+
 Serial: 38
 Job-name: eq.reconciler.settlement-unsettled-transaction
 Config-name: acm-eq/reconciler-settlement_unsettled_transaction
@@ -265,6 +303,7 @@ Db-name: reconciler
 Table-name : settlement_unsettled_transaction
 Load-to-bq-Job-name: reconciler_settlement_unsettled_transaction
 Where-condition : tl.input.data.sql.where=
+
 Serial: 39
 Job-name: eq.pos.device
 Config-name: acm-eq/pos_device
@@ -272,6 +311,7 @@ Db-name: device_management
 Table-name : pos_device
 Load-to-bq-Job-name: device_management_pos_device
 Where-condition : tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+
 Serial: 40
 Job-name: eq.prepaid-card.card
 Config-name: acm-eq/prepaid-card_card
@@ -279,6 +319,7 @@ Db-name: prepaid_card
 Table-name : card
 Load-to-bq-Job-name: prepaid_card_card
 Where-condition : tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+
 Serial: 41
 Job-name: eq.agent.relationship.list
 Config-name: acm-eq/relationship_list
@@ -286,6 +327,7 @@ Db-name: agent
 Table-name : relationship
 Load-to-bq-Job-name: agent_relationship
 Where-condition : tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+
 Serial: 42
 Job-name: eq.agent.relationship.type
 Config-name: acm-eq/relationship_type
@@ -293,6 +335,7 @@ Db-name: agent
 Table-name : relationship_type
 Load-to-bq-Job-name: agent_relationship_type
 Where-condition : tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+
 Serial: 43
 Job-name: eq.rule
 Config-name: acm-eq/rule
@@ -300,6 +343,7 @@ Db-name: rule_engine
 Table-name : rule
 Load-to-bq-Job-name: rule_engine_rule
 Where-condition : tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+
 Serial: 44
 Job-name: eq.rule.action
 Config-name: acm-eq/rule_action
@@ -307,6 +351,7 @@ Db-name: rule_engine
 Table-name : action
 Load-to-bq-Job-name: rule_engine_action
 Where-condition : tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+
 Serial: 45
 Job-name: eq.rule.action-data-history
 Config-name: acm-eq/rule_action-data-history
@@ -314,6 +359,7 @@ Db-name: rule_engine
 Table-name : action_data_history
 Load-to-bq-Job-name: rule_engine_action_data_history
 Where-condition : tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+
 Serial: 46
 Job-name: eq.rule.action-history
 Config-name: acm-eq/rule_action-history
@@ -321,6 +367,7 @@ Db-name: rule_engine
 Table-name : action_history
 Load-to-bq-Job-name: rule_engine_action_history
 Where-condition : tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+
 Serial: 47
 Job-name: eq.rule.event
 Config-name: acm-eq/rule_event
@@ -328,6 +375,7 @@ Db-name: rule_engine
 Table-name : event
 Load-to-bq-Job-name: rule_engine_event
 Where-condition : tl.input.data.sql.where=WHERE (event_created_timestamp >= :dataStartedDate AND event_created_timestamp < :dataEndedDate)
+
 Serial: 48
 Job-name: eq.rule.mechanic
 Config-name: acm-eq/rule_mechanic
@@ -335,6 +383,7 @@ Db-name: rule_engine
 Table-name : mechanic
 Load-to-bq-Job-name: rule_engine_mechanic
 Where-condition : tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+
 Serial: 49
 Job-name: eq.sof.bank
 Config-name: acm-eq/sof_bank
@@ -342,6 +391,7 @@ Db-name: sof_bank
 Table-name : bank
 Load-to-bq-Job-name: sof_bank_bank
 Where-condition : tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+
 Serial: 50
 Job-name: eq.sof.bank-sof
 Config-name: acm-eq/sof_bank-sof
@@ -349,6 +399,7 @@ Db-name: sof_bank
 Table-name : source_of_fund
 Load-to-bq-Job-name: sof_bank_source_of_fund
 Where-condition : tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+
 Serial: 51
 Job-name: eq.sof.bank-transaction
 Config-name: acm-eq/sof_bank-transaction
@@ -356,6 +407,7 @@ Db-name: sof_bank
 Table-name : transaction
 Load-to-bq-Job-name: sof_bank_transaction
 Where-condition : tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+
 Serial: 52
 Job-name: eq.sof.card-design
 Config-name: acm-eq/sof_card-design
@@ -363,6 +415,7 @@ Db-name: sof_card
 Table-name : card_design
 Load-to-bq-Job-name: sof_card_card_design
 Where-condition : tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+
 Serial: 53
 Job-name: eq.sof.card-provider
 Config-name: acm-eq/sof_card-provider
@@ -370,6 +423,7 @@ Db-name: sof_card
 Table-name : provider
 Load-to-bq-Job-name: sof_card_provider
 Where-condition : tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+
 Serial: 54
 Job-name: eq.sof.card-sof
 Config-name: acm-eq/sof_card-sof
@@ -377,6 +431,7 @@ Db-name: sof_card
 Table-name : source_of_fund
 Load-to-bq-Job-name: sof_card_source_of_fund
 Where-condition : tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+
 Serial: 55
 Job-name: eq.sof.card-transaction
 Config-name: acm-eq/sof_card-transaction
@@ -384,6 +439,7 @@ Db-name: sof_card
 Table-name : transaction
 Load-to-bq-Job-name: sof_card_transaction
 Where-condition : tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+
 Serial: 56
 Job-name: eq.sof.cash-balance
 Config-name: acm-eq/sof_cash-balance
@@ -391,6 +447,7 @@ Db-name: sof_cash
 Table-name : source_of_fund
 Load-to-bq-Job-name: sof_cash_source_of_fund
 Where-condition : tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+
 Serial: 57
 Job-name: eq.sof.cash-threshold.limit
 Config-name: acm-eq/sof_cash-threshold_limit
@@ -398,6 +455,7 @@ Db-name: sof_cash
 Table-name : threshold_limit
 Load-to-bq-Job-name: sof_cash_threshold_limit
 Where-condition : tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+
 Serial: 58
 Job-name: eq.voucher.list
 Config-name: acm-eq/voucher_list
@@ -405,6 +463,7 @@ Db-name: voucher
 Table-name : voucher
 Load-to-bq-Job-name: voucher_voucher
 Where-condition : tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+
 Serial: 59
 Job-name: eq.voucher-discount.detail.list
 Config-name: acm-eq/voucher-discount_detail_list
@@ -412,6 +471,7 @@ Db-name: voucher
 Table-name : discount_detail
 Load-to-bq-Job-name: voucher_discount_detail
 Where-condition : tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+
 Serial: 60
 Job-name: eq.voucher-discount.list
 Config-name: acm-eq/voucher-discount_list
@@ -419,6 +479,7 @@ Db-name: voucher
 Table-name : discount
 Load-to-bq-Job-name: voucher_discount
 Where-condition : tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+
 Serial: 61
 Job-name: eq.voucher-voucher.transaction
 Config-name: acm-eq/voucher-voucher_transaction
@@ -426,6 +487,7 @@ Db-name: voucher
 Table-name : discount_transaction
 Load-to-bq-Job-name: voucher_discount_transaction
 Where-condition : tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+
 Serial: 62
 Job-name: eq.web.portal.device
 Config-name: acm-eq/web_portal_device
@@ -433,6 +495,7 @@ Db-name: device_management
 Table-name : web_portal_device
 Load-to-bq-Job-name: device_management_web_portal_device
 Where-condition : tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+
 Serial: 63
 Job-name: eq.agent.activity-tracking
 Config-name: acm-eq/agent_activity_tracking
@@ -441,6 +504,7 @@ Table-name : agent_activity_tracking
 Load-to-bq-Job-name: agent_agent_activity_tracking
 Where-condition : tl.input.data.sql.where=WHERE (created_timestamp >= :dataStartedDate AND created_timestamp < :dataEndedDate)
 >> Job type ETL-Daily
+
 Serial: 1
 Job-name: eq.bulk-upload.file-management
 Config-name: acm-eq/bulk_upload-file_management
@@ -448,6 +512,7 @@ Db-name: bulk_upload
 Table-name : file_management
 Load-to-bq-Job-name: bulk_upload_file_management
 Where-condition : tl.input.data.sql.where=
+
 Serial: 2
 Job-name: eq.agent-company.service
 Config-name: acm-eq/agent-company_service
@@ -455,6 +520,7 @@ Db-name: agent
 Table-name : company_service
 Load-to-bq-Job-name: agent_company_service
 Where-condition : tl.input.data.sql.where=
+
 Serial: 3
 Job-name: eq.bulk.upload-function
 Config-name: acm-eq/bulk_upload-function
@@ -462,6 +528,7 @@ Db-name: bulk_upload
 Table-name : function
 Load-to-bq-Job-name: bulk_upload_function
 Where-condition : tl.input.data.sql.where=
+
 Serial: 4
 Job-name: eq.bulk.upload-status
 Config-name: acm-eq/bulk_upload-status
@@ -469,6 +536,7 @@ Db-name: bulk_upload
 Table-name : m_file_status
 Load-to-bq-Job-name: bulk_upload_m_file_status
 Where-condition : tl.input.data.sql.where=
+
 Serial: 5
 Job-name: eq.payment.service-company-type
 Config-name: acm-eq/payment_service-company-type
@@ -476,6 +544,7 @@ Db-name: payment
 Table-name : service_company_type
 Load-to-bq-Job-name: payment_service_company_type
 Where-condition : tl.input.data.sql.where=
+
 Serial: 6
 Job-name: eq.payment.sof-type
 Config-name: acm-eq/payment_sof-type
@@ -483,6 +552,7 @@ Db-name: payment
 Table-name : m_sof_type
 Load-to-bq-Job-name: payment_m_sof_type
 Where-condition : tl.input.data.sql.where=
+
 Serial: 7
 Job-name: eq.payment.balance-distribution
 Config-name: acm-eq/payment-balance_distribution
@@ -490,6 +560,7 @@ Db-name: payment
 Table-name : balance_distribution
 Load-to-bq-Job-name: payment_balance_distribution
 Where-condition : tl.input.data.sql.where=
+
 Serial: 8
 Job-name: eq.payment.fee-tier
 Config-name: acm-eq/payment-fee_tier
@@ -497,6 +568,7 @@ Db-name: payment
 Table-name : fee_tier
 Load-to-bq-Job-name: payment_fee_tier
 Where-condition : tl.input.data.sql.where=
+
 Serial: 9
 Job-name: eq.payment.service-agent-type
 Config-name: acm-eq/payment-service_agent_type
@@ -504,6 +576,7 @@ Db-name: payment
 Table-name : service_agent_type
 Load-to-bq-Job-name: payment_service_agent_type
 Where-condition : tl.input.data.sql.where=
+
 Serial: 10
 Job-name: eq.payment.service-command
 Config-name: acm-eq/payment-service_command
@@ -511,6 +584,7 @@ Db-name: payment
 Table-name : service_command
 Load-to-bq-Job-name: payment_service_command
 Where-condition : tl.input.data.sql.where=
+
 Serial: 11
 Job-name: eq.payment.service-customer-classification
 Config-name: acm-eq/payment-service_customer_classification
@@ -518,6 +592,7 @@ Db-name: payment
 Table-name : service_customer_classification
 Load-to-bq-Job-name: payment_service_customer_classification
 Where-condition : tl.input.data.sql.where=
+
 Serial: 12
 Job-name: eq.payment.spi-url
 Config-name: acm-eq/payment-spi_url
@@ -525,6 +600,7 @@ Db-name: payment
 Table-name : spi_url
 Load-to-bq-Job-name: payment_spi_url
 Where-condition : tl.input.data.sql.where=
+
 Serial: 13
 Job-name: eq.payment.spi-url-configuration
 Config-name: acm-eq/payment-spi_url_configuration
@@ -532,6 +608,7 @@ Db-name: payment
 Table-name : spi_url_configuration
 Load-to-bq-Job-name: payment_spi_url_configuration
 Where-condition : tl.input.data.sql.where=
+
 Serial: 14
 Job-name: eq.payment.user-payment-pin
 Config-name: acm-eq/payment-user_payment_pin
@@ -539,6 +616,7 @@ Db-name: payment
 Table-name : user_payment_pin
 Load-to-bq-Job-name: payment_user_payment_pin
 Where-condition : tl.input.data.sql.where=
+
 Serial: 15
 Job-name: eq.reconciler.internal-reconciliation-job-config
 Config-name: acm-eq/reconciler-internal_reconciliation_job_config
@@ -546,6 +624,7 @@ Db-name: reconciler
 Table-name : internal_reconciliation_job_config
 Load-to-bq-Job-name: reconciler_internal_reconciliation_job_config
 Where-condition : tl.input.data.sql.where=
+
 Serial: 16
 Job-name: eq.reconciler.internal-reconciliation-service-config
 Config-name: acm-eq/reconciler-internal_reconciliation_service_config
@@ -553,6 +632,7 @@ Db-name: reconciler
 Table-name : internal_reconciliation_service_config
 Load-to-bq-Job-name: reconciler_internal_reconciliation_service_config
 Where-condition : tl.input.data.sql.where=
+
 Serial: 17
 Job-name: eq.reconciler.internal-reconciliation-tier-label-config
 Config-name: acm-eq/reconciler-internal_reconciliation_tier_label_config
@@ -560,6 +640,7 @@ Db-name: reconciler
 Table-name : internal_reconciliation_tier_label_config
 Load-to-bq-Job-name: reconciler_internal_reconciliation_tier_label_config
 Where-condition : tl.input.data.sql.where=
+
 Serial: 18
 Job-name: eq.reconciler.settlement-configuration
 Config-name: acm-eq/reconciler-settlement_configuration
@@ -567,6 +648,7 @@ Db-name: reconciler
 Table-name : settlement_configuration
 Load-to-bq-Job-name: reconciler_settlement_configuration
 Where-condition : tl.input.data.sql.where=
+
 Serial: 19
 Job-name: eq.reconciler.partner-file
 Config-name: acm-eq/reconciler-partner_file
@@ -574,6 +656,7 @@ Db-name: reconciler
 Table-name : partner_file
 Load-to-bq-Job-name: reconciler_partner_file
 Where-condition : tl.input.data.sql.where=
+
 Serial: 20
 Job-name: eq.reconciler.partner-reconcile-result
 Config-name: acm-eq/reconciler-partner_reconcile_result
@@ -581,6 +664,7 @@ Db-name: reconciler
 Table-name : partner_reconcile_result
 Load-to-bq-Job-name: reconciler_partner_reconcile_result
 Where-condition : tl.input.data.sql.where=
+
 Serial: 21
 Job-name: eq.reconciler.sof-file
 Config-name: acm-eq/reconciler-sof_file
@@ -588,6 +672,7 @@ Db-name: reconciler
 Table-name : sof_file
 Load-to-bq-Job-name: reconciler_sof_file
 Where-condition : tl.input.data.sql.where=
+
 Serial: 22
 Job-name: eq.reconciler.sof-reconcile-result
 Config-name: acm-eq/reconciler-sof_reconcile_result
@@ -595,6 +680,7 @@ Db-name: reconciler
 Table-name : sof_reconcile_result
 Load-to-bq-Job-name: reconciler_sof_reconcile_result
 Where-condition : tl.input.data.sql.where=
+
 Serial: 23
 Job-name: eq.prepaid-card.card-type
 Config-name: acm-eq/prepaid-card_card-type
@@ -602,6 +688,7 @@ Db-name: prepaid_card
 Table-name : card_type
 Load-to-bq-Job-name: prepaid_card_card_type
 Where-condition : tl.input.data.sql.where=
+
 Serial: 24
 Job-name: eq.rule.event-value
 Config-name: acm-eq/rule_event-value
@@ -609,6 +696,7 @@ Db-name: rule_engine
 Table-name : event_value
 Load-to-bq-Job-name: rule_engine_event_value
 Where-condition : tl.input.data.sql.where=
+
 Serial: 25
 Job-name: eq.sof.bank-action
 Config-name: acm-eq/sof_bank-action
@@ -616,6 +704,7 @@ Db-name: sof_bank
 Table-name : action
 Load-to-bq-Job-name: sof_bank_action
 Where-condition : tl.input.data.sql.where=
+
 Serial: 26
 Job-name: eq.sof.card-action
 Config-name: acm-eq/sof_card-action
@@ -623,6 +712,7 @@ Db-name: sof_card
 Table-name : action
 Load-to-bq-Job-name: sof_card_action
 Where-condition : tl.input.data.sql.where=
+
 Serial: 27
 Job-name: eq.agent.hierarchy
 Config-name: acm-eq/agent_hierarchy
@@ -630,6 +720,7 @@ Db-name: agent
 Table-name : sale_hierarchy
 Load-to-bq-Job-name: agent_sale_hierarchy
 Where-condition : tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+
 Serial: 28
 Job-name: eq.agent.hierarchy-connection
 Config-name: acm-eq/agent_hierarchy_connection
@@ -637,6 +728,7 @@ Db-name: agent
 Table-name : sale_hierarchy_connection
 Load-to-bq-Job-name: agent_sale_hierarchy_connection
 Where-condition : tl.input.data.sql.where=WHERE (created_timestamp >= :dataStartedDate AND created_timestamp < :dataEndedDate)
+
 Serial: 29
 Job-name: eq.agent.hierarchy-node
 Config-name: acm-eq/agent_hierarchy_node

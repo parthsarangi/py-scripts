@@ -1,93 +1,93 @@
-Job-type, DB-name, Tab-name, Load-to-bq, etl-Job
-ETL-Hourly, agent, agent_accreditation, agent_agent_accreditation, eq.agent.accreditation
-ETL-Hourly, agent, agent_additional, agent_agent_additional, eq.agent.additional
-ETL-Hourly, agent, agent_address, agent_agent_address, eq.agent.address
-ETL-Hourly, agent, agent_type, agent_agent_type, eq.agent.agent-type
-ETL-Hourly, agent, agent_bank, agent_agent_bank, eq.agent.bank
-ETL-Hourly, agent, agent_contract, agent_agent_contract, eq.agent.contract
-ETL-Hourly, agent, edc, agent_edc, eq.agent.edc
-ETL-Hourly, agent, agent_profile, agent_agent_profile, eq.agent.profile.enhancement
-ETL-Hourly, agent, shop, agent_shop, eq.agent.shop
-ETL-Hourly, bulk_upload, file_upload, bulk_upload_file_upload, eq.bulk.upload-file.summary
-ETL-Hourly, customer, customer_additional, customer_customer_additional, eq.customer.additional
-ETL-Hourly, customer, customer_address, customer_customer_address, eq.customer.address
-ETL-Hourly, customer, customer_kyc, customer_customer_kyc, eq.customer.kyc
-ETL-Hourly, customer, customer_profile, customer_customer_profile, eq.customer.profile.enhancement
-ETL-Hourly, device_management, edc_device, device_management_edc_device, eq.edc.device
-ETL-Hourly, fraud_consultant, ticket, fraud_consultant_ticket, eq.fraud.consultant-ticket
-ETL-Hourly, device_management, mobile_device, device_management_mobile_device, eq.mobile.device
-ETL-Hourly, workflow, balance_adjustment_reference, workflow_balance_adjustment_reference, eq.payment.balance-adjustment-reference
-ETL-Hourly, payment, command_tier_mask, payment_command_tier_mask, eq.payment.command-tier-mask
-ETL-Hourly, payment, tr_order, payment_tr_order, eq.payment.order
-ETL-Hourly, payment, order_balance_movement, payment_order_balance_movement, eq.payment.order-detail
-ETL-Hourly, payment, order_reference, payment_order_reference, eq.payment.order-reference
-ETL-Hourly, payment, service, payment_service, eq.payment.service
-ETL-Hourly, payment, service_group, payment_service_group, eq.payment.service-group
-ETL-Hourly, payment, tier_level, payment_tier_level, eq.payment.tier-level
-ETL-Hourly, payment, fee_tier_mask, payment_fee_tier_mask, eq.payment-fee.tier.mask
-ETL-Hourly, payment, service_tier_mask, payment_service_tier_mask, eq.payment-service.tier.mask
-ETL-Hourly, payment, service_tier_mask_condition, payment_service_tier_mask_condition, eq.payment-service.tier.mask.condition
-ETL-Hourly, payment, tier_level_mask, payment_tier_level_mask, eq.payment-tier.level.mask
-ETL-Hourly, payment, order_balance_movement, payment_order_balance_movement, eq.payment.order-balance-movement
-ETL-Hourly, payment, order_locking, payment_order_locking, eq.payment.order-locking
-ETL-Hourly, payment, order_voucher_reference, payment_order_voucher_reference, eq.payment.order-voucher-reference
-ETL-Hourly, payment, user_sof, payment_user_sof, eq.payment.user-sof
-ETL-Hourly, reconciler, reconciliation_record, reconciler_reconciliation_record, eq.reconciler.reconciliation-record
-ETL-Hourly, reconciler, settlement, reconciler_settlement, eq.reconciler.settlement
-ETL-Hourly, reconciler, settlement_reconciliation_record, reconciler_settlement_reconciliation_record, eq.reconciler.settlement-reconciliation-record
-ETL-Hourly, reconciler, settlement_resolving_history, reconciler_settlement_resolving_history, eq.reconciler.settlement-resolving-history
-ETL-Hourly, reconciler, settlement_unsettled_transaction, reconciler_settlement_unsettled_transaction, eq.reconciler.settlement-unsettled-transaction
-ETL-Hourly, device_management, pos_device, device_management_pos_device, eq.pos.device
-ETL-Hourly, prepaid_card, card, prepaid_card_card, eq.prepaid-card.card
-ETL-Hourly, agent, relationship, agent_relationship, eq.agent.relationship.list
-ETL-Hourly, agent, relationship_type, agent_relationship_type, eq.agent.relationship.type
-ETL-Hourly, rule_engine, rule, rule_engine_rule, eq.rule
-ETL-Hourly, rule_engine, action, rule_engine_action, eq.rule.action
-ETL-Hourly, rule_engine, action_data_history, rule_engine_action_data_history, eq.rule.action-data-history
-ETL-Hourly, rule_engine, action_history, rule_engine_action_history, eq.rule.action-history
-ETL-Hourly, rule_engine, event, rule_engine_event, eq.rule.event
-ETL-Hourly, rule_engine, mechanic, rule_engine_mechanic, eq.rule.mechanic
-ETL-Hourly, sof_bank, bank, sof_bank_bank, eq.sof.bank
-ETL-Hourly, sof_bank, source_of_fund, sof_bank_source_of_fund, eq.sof.bank-sof
-ETL-Hourly, sof_bank, transaction, sof_bank_transaction, eq.sof.bank-transaction
-ETL-Hourly, sof_card, card_design, sof_card_card_design, eq.sof.card-design
-ETL-Hourly, sof_card, provider, sof_card_provider, eq.sof.card-provider
-ETL-Hourly, sof_card, source_of_fund, sof_card_source_of_fund, eq.sof.card-sof
-ETL-Hourly, sof_card, transaction, sof_card_transaction, eq.sof.card-transaction
-ETL-Hourly, sof_cash, source_of_fund, sof_cash_source_of_fund, eq.sof.cash-balance
-ETL-Hourly, sof_cash, threshold_limit, sof_cash_threshold_limit, eq.sof.cash-threshold.limit
-ETL-Hourly, voucher, voucher, voucher_voucher, eq.voucher.list
-ETL-Hourly, voucher, discount_detail, voucher_discount_detail, eq.voucher-discount.detail.list
-ETL-Hourly, voucher, discount, voucher_discount, eq.voucher-discount.list
-ETL-Hourly, voucher, discount_transaction, voucher_discount_transaction, eq.voucher-voucher.transaction
-ETL-Hourly, device_management, web_portal_device, device_management_web_portal_device, eq.web.portal.device
-ETL-Hourly, agent, agent_activity_tracking, agent_agent_activity_tracking, eq.agent.activity-tracking
-ETL-Daily, bulk_upload, file_management, bulk_upload_file_management, eq.bulk-upload.file-management
-ETL-Daily, agent, company_service, agent_company_service, eq.agent-company.service
-ETL-Daily, bulk_upload, function, bulk_upload_function, eq.bulk.upload-function
-ETL-Daily, bulk_upload, m_file_status, bulk_upload_m_file_status, eq.bulk.upload-status
-ETL-Daily, payment, service_company_type, payment_service_company_type, eq.payment.service-company-type
-ETL-Daily, payment, m_sof_type, payment_m_sof_type, eq.payment.sof-type
-ETL-Daily, payment, balance_distribution, payment_balance_distribution, eq.payment.balance-distribution
-ETL-Daily, payment, fee_tier, payment_fee_tier, eq.payment.fee-tier
-ETL-Daily, payment, service_agent_type, payment_service_agent_type, eq.payment.service-agent-type
-ETL-Daily, payment, service_command, payment_service_command, eq.payment.service-command
-ETL-Daily, payment, service_customer_classification, payment_service_customer_classification, eq.payment.service-customer-classification
-ETL-Daily, payment, spi_url, payment_spi_url, eq.payment.spi-url
-ETL-Daily, payment, spi_url_configuration, payment_spi_url_configuration, eq.payment.spi-url-configuration
-ETL-Daily, payment, user_payment_pin, payment_user_payment_pin, eq.payment.user-payment-pin
-ETL-Daily, reconciler, internal_reconciliation_job_config, reconciler_internal_reconciliation_job_config, eq.reconciler.internal-reconciliation-job-config
-ETL-Daily, reconciler, internal_reconciliation_service_config, reconciler_internal_reconciliation_service_config, eq.reconciler.internal-reconciliation-service-config
-ETL-Daily, reconciler, internal_reconciliation_tier_label_config, reconciler_internal_reconciliation_tier_label_config, eq.reconciler.internal-reconciliation-tier-label-config
-ETL-Daily, reconciler, settlement_configuration, reconciler_settlement_configuration, eq.reconciler.settlement-configuration
-ETL-Daily, reconciler, partner_file, reconciler_partner_file, eq.reconciler.partner-file
-ETL-Daily, reconciler, partner_reconcile_result, reconciler_partner_reconcile_result, eq.reconciler.partner-reconcile-result
-ETL-Daily, reconciler, sof_file, reconciler_sof_file, eq.reconciler.sof-file
-ETL-Daily, reconciler, sof_reconcile_result, reconciler_sof_reconcile_result, eq.reconciler.sof-reconcile-result
-ETL-Daily, prepaid_card, card_type, prepaid_card_card_type, eq.prepaid-card.card-type
-ETL-Daily, rule_engine, event_value, rule_engine_event_value, eq.rule.event-value
-ETL-Daily, sof_bank, action, sof_bank_action, eq.sof.bank-action
-ETL-Daily, sof_card, action, sof_card_action, eq.sof.card-action
-ETL-Daily, agent, sale_hierarchy, agent_sale_hierarchy, eq.agent.hierarchy
-ETL-Daily, agent, sale_hierarchy_connection, agent_sale_hierarchy_connection, eq.agent.hierarchy-connection
-ETL-Daily, agent, hierarchy_node, agent_hierarchy_node, eq.agent.hierarchy-node
+Job-type, DB-name, Tab-name, Load-to-bq, etl-Job, where_condition
+ETL-Hourly, agent, agent_accreditation, agent_agent_accreditation, eq.agent.accreditation, tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+ETL-Hourly, agent, agent_additional, agent_agent_additional, eq.agent.additional, tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+ETL-Hourly, agent, agent_address, agent_agent_address, eq.agent.address, tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+ETL-Hourly, agent, agent_type, agent_agent_type, eq.agent.agent-type, tl.input.data.sql.where=WHERE (created_timestamp >= :dataStartedDate AND created_timestamp < :dataEndedDate)
+ETL-Hourly, agent, agent_bank, agent_agent_bank, eq.agent.bank, tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+ETL-Hourly, agent, agent_contract, agent_agent_contract, eq.agent.contract, tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+ETL-Hourly, agent, edc, agent_edc, eq.agent.edc, tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+ETL-Hourly, agent, agent_profile, agent_agent_profile, eq.agent.profile.enhancement, tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+ETL-Hourly, agent, shop, agent_shop, eq.agent.shop, tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+ETL-Hourly, bulk_upload, file_upload, bulk_upload_file_upload, eq.bulk.upload-file.summary, tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+ETL-Hourly, customer, customer_additional, customer_customer_additional, eq.customer.additional, tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+ETL-Hourly, customer, customer_address, customer_customer_address, eq.customer.address, tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+ETL-Hourly, customer, customer_kyc, customer_customer_kyc, eq.customer.kyc, tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+ETL-Hourly, customer, customer_profile, customer_customer_profile, eq.customer.profile.enhancement, tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+ETL-Hourly, device_management, edc_device, device_management_edc_device, eq.edc.device, tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+ETL-Hourly, fraud_consultant, ticket, fraud_consultant_ticket, eq.fraud.consultant-ticket, tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+ETL-Hourly, device_management, mobile_device, device_management_mobile_device, eq.mobile.device, tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+ETL-Hourly, workflow, balance_adjustment_reference, workflow_balance_adjustment_reference, eq.payment.balance-adjustment-reference, tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+ETL-Hourly, payment, command_tier_mask, payment_command_tier_mask, eq.payment.command-tier-mask, tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+ETL-Hourly, payment, tr_order, payment_tr_order, eq.payment.order, tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+ETL-Hourly, payment, order_balance_movement, payment_order_balance_movement, eq.payment.order-detail, tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+ETL-Hourly, payment, order_reference, payment_order_reference, eq.payment.order-reference, tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+ETL-Hourly, payment, service, payment_service, eq.payment.service, tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+ETL-Hourly, payment, service_group, payment_service_group, eq.payment.service-group, tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+ETL-Hourly, payment, tier_level, payment_tier_level, eq.payment.tier-level, tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+ETL-Hourly, payment, fee_tier_mask, payment_fee_tier_mask, eq.payment-fee.tier.mask, tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+ETL-Hourly, payment, service_tier_mask, payment_service_tier_mask, eq.payment-service.tier.mask, tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+ETL-Hourly, payment, service_tier_mask_condition, payment_service_tier_mask_condition, eq.payment-service.tier.mask.condition, tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+ETL-Hourly, payment, tier_level_mask, payment_tier_level_mask, eq.payment-tier.level.mask, tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+ETL-Hourly, payment, order_balance_movement, payment_order_balance_movement, eq.payment.order-balance-movement, tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+ETL-Hourly, payment, order_locking, payment_order_locking, eq.payment.order-locking, tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+ETL-Hourly, payment, order_voucher_reference, payment_order_voucher_reference, eq.payment.order-voucher-reference, tl.input.data.sql.where=WHERE (created_timestamp >= :dataStartedDate AND created_timestamp < :dataEndedDate)
+ETL-Hourly, payment, user_sof, payment_user_sof, eq.payment.user-sof, tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+ETL-Hourly, reconciler, reconciliation_record, reconciler_reconciliation_record, eq.reconciler.reconciliation-record, tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+ETL-Hourly, reconciler, settlement, reconciler_settlement, eq.reconciler.settlement, tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+ETL-Hourly, reconciler, settlement_reconciliation_record, reconciler_settlement_reconciliation_record, eq.reconciler.settlement-reconciliation-record, tl.input.data.sql.where=
+ETL-Hourly, reconciler, settlement_resolving_history, reconciler_settlement_resolving_history, eq.reconciler.settlement-resolving-history, tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+ETL-Hourly, reconciler, settlement_unsettled_transaction, reconciler_settlement_unsettled_transaction, eq.reconciler.settlement-unsettled-transaction, tl.input.data.sql.where=
+ETL-Hourly, device_management, pos_device, device_management_pos_device, eq.pos.device, tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+ETL-Hourly, prepaid_card, card, prepaid_card_card, eq.prepaid-card.card, tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+ETL-Hourly, agent, relationship, agent_relationship, eq.agent.relationship.list, tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+ETL-Hourly, agent, relationship_type, agent_relationship_type, eq.agent.relationship.type, tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+ETL-Hourly, rule_engine, rule, rule_engine_rule, eq.rule, tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+ETL-Hourly, rule_engine, action, rule_engine_action, eq.rule.action, tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+ETL-Hourly, rule_engine, action_data_history, rule_engine_action_data_history, eq.rule.action-data-history, tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+ETL-Hourly, rule_engine, action_history, rule_engine_action_history, eq.rule.action-history, tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+ETL-Hourly, rule_engine, event, rule_engine_event, eq.rule.event, tl.input.data.sql.where=WHERE (event_created_timestamp >= :dataStartedDate AND event_created_timestamp < :dataEndedDate)
+ETL-Hourly, rule_engine, mechanic, rule_engine_mechanic, eq.rule.mechanic, tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+ETL-Hourly, sof_bank, bank, sof_bank_bank, eq.sof.bank, tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+ETL-Hourly, sof_bank, source_of_fund, sof_bank_source_of_fund, eq.sof.bank-sof, tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+ETL-Hourly, sof_bank, transaction, sof_bank_transaction, eq.sof.bank-transaction, tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+ETL-Hourly, sof_card, card_design, sof_card_card_design, eq.sof.card-design, tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+ETL-Hourly, sof_card, provider, sof_card_provider, eq.sof.card-provider, tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+ETL-Hourly, sof_card, source_of_fund, sof_card_source_of_fund, eq.sof.card-sof, tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+ETL-Hourly, sof_card, transaction, sof_card_transaction, eq.sof.card-transaction, tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+ETL-Hourly, sof_cash, source_of_fund, sof_cash_source_of_fund, eq.sof.cash-balance, tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+ETL-Hourly, sof_cash, threshold_limit, sof_cash_threshold_limit, eq.sof.cash-threshold.limit, tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+ETL-Hourly, voucher, voucher, voucher_voucher, eq.voucher.list, tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+ETL-Hourly, voucher, discount_detail, voucher_discount_detail, eq.voucher-discount.detail.list, tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+ETL-Hourly, voucher, discount, voucher_discount, eq.voucher-discount.list, tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+ETL-Hourly, voucher, discount_transaction, voucher_discount_transaction, eq.voucher-voucher.transaction, tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+ETL-Hourly, device_management, web_portal_device, device_management_web_portal_device, eq.web.portal.device, tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+ETL-Hourly, agent, agent_activity_tracking, agent_agent_activity_tracking, eq.agent.activity-tracking, tl.input.data.sql.where=WHERE (created_timestamp >= :dataStartedDate AND created_timestamp < :dataEndedDate)
+ETL-Daily, bulk_upload, file_management, bulk_upload_file_management, eq.bulk-upload.file-management, tl.input.data.sql.where=
+ETL-Daily, agent, company_service, agent_company_service, eq.agent-company.service, tl.input.data.sql.where=
+ETL-Daily, bulk_upload, function, bulk_upload_function, eq.bulk.upload-function, tl.input.data.sql.where=
+ETL-Daily, bulk_upload, m_file_status, bulk_upload_m_file_status, eq.bulk.upload-status, tl.input.data.sql.where=
+ETL-Daily, payment, service_company_type, payment_service_company_type, eq.payment.service-company-type, tl.input.data.sql.where=
+ETL-Daily, payment, m_sof_type, payment_m_sof_type, eq.payment.sof-type, tl.input.data.sql.where=
+ETL-Daily, payment, balance_distribution, payment_balance_distribution, eq.payment.balance-distribution, tl.input.data.sql.where=
+ETL-Daily, payment, fee_tier, payment_fee_tier, eq.payment.fee-tier, tl.input.data.sql.where=
+ETL-Daily, payment, service_agent_type, payment_service_agent_type, eq.payment.service-agent-type, tl.input.data.sql.where=
+ETL-Daily, payment, service_command, payment_service_command, eq.payment.service-command, tl.input.data.sql.where=
+ETL-Daily, payment, service_customer_classification, payment_service_customer_classification, eq.payment.service-customer-classification, tl.input.data.sql.where=
+ETL-Daily, payment, spi_url, payment_spi_url, eq.payment.spi-url, tl.input.data.sql.where=
+ETL-Daily, payment, spi_url_configuration, payment_spi_url_configuration, eq.payment.spi-url-configuration, tl.input.data.sql.where=
+ETL-Daily, payment, user_payment_pin, payment_user_payment_pin, eq.payment.user-payment-pin, tl.input.data.sql.where=
+ETL-Daily, reconciler, internal_reconciliation_job_config, reconciler_internal_reconciliation_job_config, eq.reconciler.internal-reconciliation-job-config, tl.input.data.sql.where=
+ETL-Daily, reconciler, internal_reconciliation_service_config, reconciler_internal_reconciliation_service_config, eq.reconciler.internal-reconciliation-service-config, tl.input.data.sql.where=
+ETL-Daily, reconciler, internal_reconciliation_tier_label_config, reconciler_internal_reconciliation_tier_label_config, eq.reconciler.internal-reconciliation-tier-label-config, tl.input.data.sql.where=
+ETL-Daily, reconciler, settlement_configuration, reconciler_settlement_configuration, eq.reconciler.settlement-configuration, tl.input.data.sql.where=
+ETL-Daily, reconciler, partner_file, reconciler_partner_file, eq.reconciler.partner-file, tl.input.data.sql.where=
+ETL-Daily, reconciler, partner_reconcile_result, reconciler_partner_reconcile_result, eq.reconciler.partner-reconcile-result, tl.input.data.sql.where=
+ETL-Daily, reconciler, sof_file, reconciler_sof_file, eq.reconciler.sof-file, tl.input.data.sql.where=
+ETL-Daily, reconciler, sof_reconcile_result, reconciler_sof_reconcile_result, eq.reconciler.sof-reconcile-result, tl.input.data.sql.where=
+ETL-Daily, prepaid_card, card_type, prepaid_card_card_type, eq.prepaid-card.card-type, tl.input.data.sql.where=
+ETL-Daily, rule_engine, event_value, rule_engine_event_value, eq.rule.event-value, tl.input.data.sql.where=
+ETL-Daily, sof_bank, action, sof_bank_action, eq.sof.bank-action, tl.input.data.sql.where=
+ETL-Daily, sof_card, action, sof_card_action, eq.sof.card-action, tl.input.data.sql.where=
+ETL-Daily, agent, sale_hierarchy, agent_sale_hierarchy, eq.agent.hierarchy, tl.input.data.sql.where=WHERE (last_updated_timestamp >= :dataStartedDate AND last_updated_timestamp < :dataEndedDate)
+ETL-Daily, agent, sale_hierarchy_connection, agent_sale_hierarchy_connection, eq.agent.hierarchy-connection, tl.input.data.sql.where=WHERE (created_timestamp >= :dataStartedDate AND created_timestamp < :dataEndedDate)
+ETL-Daily, agent, hierarchy_node, agent_hierarchy_node, eq.agent.hierarchy-node, tl.input.data.sql.where=WHERE (created_timestamp >= :dataStartedDate AND created_timestamp < :dataEndedDate)

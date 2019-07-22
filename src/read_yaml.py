@@ -21,7 +21,7 @@ def read_yaml(job_type, y, output_files, search_key):
                         for item1 in v2:
                             for k3, v3 in item1.items():
                                 s = s + 1
-                                opfile.write('Serial: %s\n' % s)
+                                opfile.write('\nSerial: %s\n' % s)
                                 opfile.write('Job-name: %s\n' % k3)
                                 for k4, v4 in v3.items():
                                     if k4 == "profile":
@@ -41,7 +41,7 @@ def read_yaml(job_type, y, output_files, search_key):
                                         opfile.write('Where-condition : %s\n' % var_dict['where_condition'])
                                         etl_jobs_list.append(k3)
                                         bq_jobs_list.append(load_to_BQ_job_name)
-                                        opfile_bq.write('\n%s, %s, %s, %s, %s' % (job_type, db_name, var_dict["tab_name"], load_to_BQ_job_name, k3 ))
+                                        opfile_bq.write('\n%s, %s, %s, %s, %s, %s' % (job_type, db_name, var_dict["tab_name"], load_to_BQ_job_name, k3, var_dict["where_condition"]))
     # write_to_file(etl_jobs_list, opfile_etl)
     # write_to_file(bq_jobs_list, opfile_bq)
 
@@ -89,7 +89,7 @@ def main():
     fileyml = open(bitbucket_path + repo_path + 'DSL/' + env + '/jobs.yaml', 'r')
     y = yaml.load(fileyml, Loader=yaml.FullLoader)
 
-    opfile_bq.write('Job-type, DB-name, Tab-name, Load-to-bq, etl-Job')
+    opfile_bq.write('Job-type, DB-name, Tab-name, Load-to-bq, etl-Job, where_condition')
     # search_key="ETL-Hourly"
     for search_key in ("ETL-Hourly", "ETL-Daily"):
         read_yaml(search_key, y,output_files,search_key)
