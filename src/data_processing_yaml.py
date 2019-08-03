@@ -8,6 +8,7 @@ def read_file(path, file):
         if  in line
         print()
 
+
 if __name__ == '__main__':
     path = '/Users/parth/Documents/bitbuckets/acm-dp-data-processing/profiles/acm-eq-qa'
     file_names = listdir(path)
