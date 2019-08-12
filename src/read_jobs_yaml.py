@@ -18,7 +18,7 @@ def main_read_pipelines_yaml():
 
 
 def main_read_jobs_yaml():
-    input_file = open("/Users/parth/Documents/bitbuckets/acm-dp-eq-mm-etl-config/DSL/staging/jobs.yaml", 'r')
+    input_file = open("/Users/parth/Documents/bitbuckets/acm-dp-eq-mm-etl-config/DSL/production/jobs.yaml", 'r')
     inputData = yaml.load(input_file, Loader=yaml.FullLoader)
 
     searchList = ["ETL-Daily", "ETL-Hourly", "ETL-Initial"]
